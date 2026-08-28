@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="fg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4d77ff"/>
+      <stop offset="100%" stop-color="#80db66"/>
+    </linearGradient>
+    <linearGradient id="ff" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111b2e"/>
+      <stop offset="100%" stop-color="#0a0f1c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer hexagon stroke -->
+  <polygon points="100,10 186.6,55 186.6,145 100,190 13.4,145 13.4,55" fill="none" stroke="url(#fg)" stroke-width="5" stroke-linejoin="round"/>
+
+  <!-- Filled hexagon -->
+  <polygon points="100,20 180,60 180,140 100,180 20,140 20,60" fill="url(#ff)"/>
+
+  <!-- M text -->
+  <text x="100" y="120" font-family="Arial,sans-serif" font-size="70" font-weight="700" fill="#80db66" text-anchor="middle" letter-spacing="2">M</text>
+
+  <!-- Decorative line -->
+  <line x1="65" y1="132" x2="135" y2="132" stroke="url(#fg)" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+</svg>

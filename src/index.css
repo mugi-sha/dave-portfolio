@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Kanit:wght@300;400;500;600;700;800;900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --font-kanit: "Kanit", ui-sans-serif, system-ui, sans-serif;
+
+  --color-ink: #0f172a;
+  --color-panel: #1e293b;
+  --color-accent: #80db66;
+  --color-accent-strong: #22c55e;
+  --color-electric: #4d77ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a0f1c;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-heading {
+  background: linear-gradient(180deg, #646973 0%, #BBCCD7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom cursor dot (desktop only) */
+@media (hover: hover) and (pointer: fine) {
+  html {
+    cursor: default;
+  }
+  a, button, [role="button"], .cursor-pointer {
+    cursor: pointer;
+  }
+}
+
+/* Selection styling */
+::selection {
+  background: rgba(128, 219, 102, 0.3);
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background: rgba(128, 219, 102, 0.3);
+  color: #ffffff;
+}
