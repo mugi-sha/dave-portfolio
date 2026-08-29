@@ -21,7 +21,7 @@ export default function AboutMe() {
                         </p>
 
                         <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
-                            I've honed my skills through hands-on training at some of Rwanda's most renowned software companies — <span className="font-bold">Awesomity Lab</span>, <span className="font-bold">HeHe Limited</span>, <span className="font-bold">Digital Umuganda</span>, and <span className="font-bold">Zima Technologies</span>. These experiences immersed me in real-world product development, from building user-centric web and mobile applications to working on enterprise systems, e-governance platforms, and IoT solutions.
+                            I've honed my skills through hands-on training and certifications from some of the world's most renowned technology companies and platforms — <span className="font-bold">IBM</span>, <span className="font-bold">Coursera</span>, <span className="font-bold">Google</span>, and <span className="font-bold">freeCodeCamp</span>. These experiences immersed me in real-world product development, from building user-centric web and mobile applications to working on enterprise systems, cloud platforms, and AI solutions.
                         </p>
 
                         <p className="text-base sm:text-lg text-gray-300 leading-relaxed">

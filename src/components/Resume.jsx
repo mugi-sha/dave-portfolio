@@ -24,12 +24,10 @@ const resumeData = {
         description:
             "A blend of formal education and self-directed learning, focusing on Computer Science, Economics, and various programming technologies.",
         items: [
-            { date: "July, 2016 - Aug, 2020", role: "AI software Engineering Training", company: "Coursera" },
-            { date: "Jan, 2023 - July, 2023", role: "The complete Full-stack web Developement Bootcamp", company: "freeCodeCamp" },
-            { date: "Dec, 2022 - June, 2023", role: "Learn Ethical Hacking From Scratch", company: "edX" },
-            { date: "Mar, 2022 - May, 2022", role: "Make an open source drone", company: "Pluralsight" },
-            { date: "2014-2016", role: "High School Diploma", company: "Mulindi TSS" },
-            { date: "2010-2014", role: "O-Level Education", company: "Kagarama Secondary School" },
+            { date: "2023 - 2024", role: "AI & Machine Learning Training", company: "IBM" },
+            { date: "2024 - 2025", role: "The Complete Full-Stack Web Development Bootcamp", company: "Coursera" },
+            { date: "2025 - 2026", role: "Cloud Computing Specialization", company: "Google" },
+            { date: "2026 - Present", role: "Full-Stack Development Certification", company: "freeCodeCamp" },
         ],
     },
     skills: {
