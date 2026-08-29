@@ -19,18 +19,6 @@ import {
 
 // Step 1: Put all your tab content in one place.
 const resumeData = {
-    experience: {
-        title: "My experience",
-        description:
-            "A track record of impactful roles in software engineering and IT, demonstrating skills in various programming languages and technologies.",
-        items: [
-            { date: "Mar, 2020-May,2021", role: "Software Engineer Intern", company: "Andela Rwanda" },
-            { date: "2021-2022", role: "Software Engineer", company: "Irembo" },
-            { date: "2022-2023", role: "Frontend Developer", company: "AC Group" },
-            { date: "2023-2024", role: "Backend Developer", company: "HeHe Limited" },
-            { date: "2024-Present", role: "Full Stack Developer", company: "Koa" },
-        ],
-    },
     education: {
         title: "My education",
         description:
@@ -48,11 +36,6 @@ const resumeData = {
         title: "My skills",
         description:
             "A diverse set of programming languages and technologies, with a focus on software engineering, web development, and data structures.",
-    },
-    about: {
-        title: "About me",
-        description:
-            "I'm a dedicated Computer Science and Economics student at Swarthmore College, passionate about leveraging technology to solve real-world problems. With a diverse set of experiences in software engineering and IT, I'm constantly seeking new challenges and opportunities to grow.",
     },
 };
 
@@ -74,27 +57,13 @@ const skillsList = [
     { icon: SiMysql, name: "MySQL" },
 ];
 
-// Personal info pairs for the About Me tab
-const aboutInfo = [
-    { label: "Name", value: "mugisha david" },
-    { label: "Phone", value: "(+250) 796 888 684" },
-    { label: "Experience", value: "2+ Years" },
-    { label: "GitHub", value: "mugi-sha" },
-    { label: "Nationality", value: "Rwandan" },
-    { label: "Email", value: "mugishadavid910@gmail.com" },
-    { label: "Education", value: "High School Graduate" },
-    { label: "Language", value: "English, French & Swahili" },
-];
-
 const tabs = [
-    { key: "experience", label: "Experience" },
     { key: "education", label: "Education" },
     { key: "skills", label: "Skills" },
-    { key: "about", label: "About Me" },
 ];
 
 export default function Resume() {
-    const [activeTab, setActiveTab] = useState("experience");
+    const [activeTab, setActiveTab] = useState("education");
     const activeContent = resumeData[activeTab];
 
     return (
@@ -227,12 +196,7 @@ export default function Resume() {
                                     "grid-cols-2 md:grid-cols-4"
 
                                     :
-                                    activeTab === "about"
-                                        ?
-                                        "grid-cols-1 md:grid-cols-2"
-
-                                        :
-                                        "grid-cols-1 md:grid-cols-2"
+                                    "grid-cols-1 md:grid-cols-2"
                                 }
 
             `}
@@ -276,36 +240,8 @@ export default function Resume() {
 
 
 
-                            {/* About */}
-                            {activeTab === "about" && (
-                                aboutInfo.map((info, index) => (
-                                    <div
-                                        key={index}
-                                        className="
-                    bg-gray-900
-                    p-4
-                    rounded-lg
-                    "
-                                    >
-
-                                        <span className="text-white/50 text-sm">
-                                            {info.label}
-                                        </span>
-
-
-                                        <p className="font-semibold mt-1 break-words">
-                                            {info.value}
-                                        </p>
-
-                                    </div>
-                                ))
-                            )}
-
-
-
-
-                            {/* Experience / Education */}
-                            {activeTab !== "skills" && activeTab !== "about" && (
+                            {/* Education */}
+                            {activeTab !== "skills" && (
 
                                 activeContent.items.map((item, index) => (
 
